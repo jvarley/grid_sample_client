@@ -2,6 +2,7 @@ import rospy
 import actionlib
 
 from graspit_interface.msg import Grasp
+from grid_sample_plugin.msg import GridSampleAction, GridSampleGoal
 
 class GridSampleClient(object): 
     """
@@ -12,7 +13,7 @@ class GridSampleClient(object):
     GRASPIT_NODE_NAME = "/graspit/"
 
     @classmethod
-    def getSamples(cls)
+    def getSamples(cls):
                    
         try:
             rospy.init_node(cls.ROS_NODE_NAME, anonymous=True)
